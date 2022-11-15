@@ -3,7 +3,8 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import {deleteContact} from 'redux/operations'
+import { deleteContact } from 'redux/operations'
+import s from '../ContactList/ContactList.module.css'
 
 export const ContactItem = ({ name, number, id }) => {
   const isLoading = useSelector(state => state.contacts.isLoading)
@@ -17,7 +18,7 @@ export const ContactItem = ({ name, number, id }) => {
 
   return (
     <li>
-      {name}: {number} <button type="button" disabled={isLoading === id} onClick={() => dispatch(deleteContact(id))}>{isLoading === id ? 'Deleting...' : 'Delete'}</button>
+      {name}: {number} <button className={s.button} type="button" disabled={isLoading === id} onClick={() => dispatch(deleteContact(id))}>{isLoading === id ? 'Removal...' : 'Delete'}</button>
     </li>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import css from './ContactForm.module.css';
+import s from './ContactForm.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { addContact } from 'redux/operations';
@@ -57,7 +57,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
+    <div className={s.container}>
+      <form className={s.form} onSubmit={handleSubmit}>
       <label>
         Name
         <input
@@ -82,9 +83,10 @@ export const ContactForm = () => {
           onChange={handleChange}
         />
       </label>
-      <button type="submit" disabled={isLoading === 'add'}>
+      <button className={s.btn} type="submit" disabled={isLoading === 'add'}>
         {isLoading === 'add' ? 'Adding...' : 'Add contact'}
       </button>
     </form>
+    </div>
   );
 };
