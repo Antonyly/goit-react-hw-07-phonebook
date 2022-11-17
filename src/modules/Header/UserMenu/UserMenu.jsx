@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "../../../redux/auth/auth-operations";
 import { userData } from "../../../redux/auth/auth-selector";
 
-import s from "./user-menu.module.css";
+import s from "./UserMenu.module.css";
 
 const UserMenu = () => {
 

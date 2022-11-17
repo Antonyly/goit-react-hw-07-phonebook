@@ -9,7 +9,7 @@ import useForm from "../../../shared/hooks/useForm";
 import { initialState } from "./initialState";
 import { fields } from "./fields";
 
-import s from "./contactForm.module.css";
+import s from "./ContactForm.module.css";
 
 const ContactForm = ({ onSubmit }) => {
   const { state, handleChange, handleSubmit } = useForm({

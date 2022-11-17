@@ -10,7 +10,7 @@ import useIsLogin from "../../shared/hooks/useLogin";
 import TextField from "../../shared/components/TextField";
 import Button from "../../shared/components/Button";
 
-import s from "./register-form.module.css";
+import s from "./RegisterForm.module.css";
 
 const RegisterForm = ({ onSubmit }) => {
 

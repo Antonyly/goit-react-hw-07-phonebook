@@ -6,7 +6,7 @@ import { fields } from "./fields";
 
 import TextField from "../../shared/components/TextField";
 import Button from "../../shared/components/Button";
-import s from "./login-form.module.css";
+import s from "./LoginForm.module.css";
 
 const LoginForm = ({ onSubmit }) => {
   const { state, handleChange, handleSubmit } = useForm({

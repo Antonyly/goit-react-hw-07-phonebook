@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import s from "./login-register.module.css";
+import s from "./LoginRegister.module.css";
 
 const LoginAndRegister = () => {
   const linkActive = ({ isActive }) => {

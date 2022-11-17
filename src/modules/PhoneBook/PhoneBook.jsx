@@ -13,7 +13,7 @@ import Contacts from "./Contacts";
 import ContactForm from "./ContactForm";
 import Filter from "./Filter";
 
-import s from "./phone-book.module.css";
+import s from "./PhoneBook.module.css";
 
 const PhoneBook = () => {
 

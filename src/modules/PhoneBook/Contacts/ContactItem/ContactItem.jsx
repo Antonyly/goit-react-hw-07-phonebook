@@ -2,7 +2,7 @@ import { memo } from "react";
 import PropTypes from "prop-types";
 import Button from "../../../../shared/components/Button";
 
-import s from "./contact-item.module.css";
+import s from "./ContactItem.module.css";
 
 const ContactItem = (props) => {
 

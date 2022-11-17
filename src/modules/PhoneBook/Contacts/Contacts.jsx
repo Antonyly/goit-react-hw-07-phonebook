@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import ContactItem from "./ContactItem";
 
-import s from "./contacts.module.css";
+import s from "./Сontacts.module.css";
 
 const Contacts = ({ items, onClick }) => {
 

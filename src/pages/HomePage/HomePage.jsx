@@ -1,4 +1,4 @@
-import s from "./home-page.module.css";
+import s from "./HomePage.module.css";
 const HomePage = () => {
   return (
     <div className='container'>
