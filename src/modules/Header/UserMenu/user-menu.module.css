@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--link);
+}
+
+.email {
+  font-size: 14px;
+}
+.btn {
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: transparent;
+  border-color: transparent;
+  height: 25px;
+}
+
+.btn:hover,
+:focus {
+  color: var(--bcg-btn-hover);
+  background-color: transparent;
+  outline: 2px solid var(--btn-outline);
+}
